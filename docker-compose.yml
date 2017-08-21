@@ -1,0 +1,4 @@
+cron:
+    image: eugeneware/docker-cron
+    environment:
+        CRONCMD: '* * * * * root    echo "testing" >> /var/log/cron.log 2>&1'
